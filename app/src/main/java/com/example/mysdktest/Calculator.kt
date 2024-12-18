@@ -8,6 +8,5 @@ class Calculator : ICalculator {
 }
 
 interface ICalculator {
-
     fun plusDouble(element: Double, elementTwo: Double): Double
 }
