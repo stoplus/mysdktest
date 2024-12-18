@@ -26,7 +26,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
@@ -38,7 +38,7 @@ publishing {
             }
             groupId = "com.github.stoplus"
             artifactId = "mysdktest"
-            version = "1.0.6"
+            version = "1.0.7"
         }
     }
     repositories {
