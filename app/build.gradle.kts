@@ -22,8 +22,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
         jvmTarget = "1.8"
@@ -38,7 +38,7 @@ publishing {
             }
             groupId = "com.github.stoplus"
             artifactId = "mysdktest"
-            version = "1.0.5"
+            version = "1.0.6"
         }
     }
     repositories {
