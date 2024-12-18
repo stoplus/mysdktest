@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     id("maven-publish")
 }
@@ -9,11 +9,8 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.mysdktest"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,12 +30,30 @@ android {
     }
 }
 
-dependencies {
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+            groupId = "com.github.stoplus"
+            artifactId = "mysdktest"
+            version = "1.0.1"
+        }
+    }
+    repositories {
+        maven {
+            name = "jitpack"
+            url = uri("https://jitpack.io")
+        }
+    }
+}
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
+dependencies {
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.espresso.core)
 }
