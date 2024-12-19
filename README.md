@@ -5,7 +5,6 @@ MySDK is a simple test SDK for Android.
 ## Overview
 
 - Calculator, which can sum
-- metod
 
 ## Implementation details
 
