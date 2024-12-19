@@ -2,12 +2,12 @@ package com.example.mysdktest
 
 interface ICalculator {
 
-    fun plusDouble(element: Double, elementTwo: Double): Double
+    fun intPlus(element: Int, elementTwo: Int): Int
 }
 
 class Calculator : ICalculator {
 
-    override fun plusDouble(element: Double, elementTwo: Double): Double {
-        return elementTwo + element
+    override fun intPlus(first: Int, second: Int): Int {
+        return first + second
     }
 }
