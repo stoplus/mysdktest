@@ -22,7 +22,7 @@ add the following dependency to your build.gradle.kts:
 
 ```kotlin
 dependencies {
-    implementation("com.github.stoplus:mysdktest:1.0.15")
+    implementation("com.github.stoplus:mysdktest:1.0.16")
 }
 ```
 
@@ -31,7 +31,7 @@ libs.versions.toml:
 
 ```kotlin
 [versions]
-mysdktest = "1.0.15"
+mysdktest = "1.0.16"
 
 [libraries]
 mysdktest = { group = "com.github.stoplus", name = "mysdktest", version.ref = "mysdktest" }
