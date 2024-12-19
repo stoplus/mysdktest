@@ -38,7 +38,7 @@ publishing {
             }
             groupId = "com.github.stoplus"
             artifactId = "mysdktest"
-            version = "1.0.15"
+            version = "1.0.16"
         }
     }
     repositories {
