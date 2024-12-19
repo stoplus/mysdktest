@@ -48,7 +48,6 @@ dependencies {
 example
 
 ```kotlin
-private val calc: ICalculator = Calculator()
-val sum = calc.intPlus(5, 4)
+val sum = intPlus(5, 4)
 ```
 
